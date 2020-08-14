@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>HELLO!</h1>
+<div id="login-container">
+    <from>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <button id="login-btn" type="button">Login</button>
+    </from>
+</div>
+<div id="auth-container" class="hidden">
+    <h2>You are logged!</h2>
+    <div>
+        <h3>Hi, hi </h3>
+        <span id="user-email">!</span>
+        <a id="logoutBtn" href="">Logout</a>
+    </div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCZF5Yh9VRQTtbocyOgTM_Io8ztcRTO9tY",
+        authDomain: "wowbeat-252c3.firebaseapp.com",
+        databaseURL: "https://wowbeat-252c3.firebaseio.com",
+        projectId: "wowbeat-252c3",
+        storageBucket: "wowbeat-252c3.appspot.com",
+        messagingSenderId: "93640304513",
+        appId: "1:93640304513:web:3539e372944b327dfd2a80",
+        measurementId: "G-2TK556EF1S"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+<script src="./login.js"></script>
+</body>
+</html>

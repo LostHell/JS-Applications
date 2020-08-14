@@ -1,0 +1,21 @@
+{
+  "name": "Exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "ws"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.5.0",
+    "express": "^4.17.1",
+    "handlebars": "4.7.6",
+    "jquery": "3.5.1",
+    "local-web-server": "4.2.1",
+    "sammy": "0.7.6"
+  }
+}
